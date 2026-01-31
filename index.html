@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>劼晉的個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<header class="hero">
+  <p class="tagline rainbow">EVERYTHING IS PERSONAL</p>
+  <h1 class="main-title">劼晉的個人網站</h1>
+</header>
+
+<!-- 第一張卡片 -->
+<section class="card">
+  <div class="card-left">
+    <h2 class="name">李劼晉</h2>
+  </div>
+
+  <div class="photos">
+    <img src="Photo1.jpg">
+    <img src="Photo2.jpg">
+  </div>
+
+  <button id="toggleBtn" class="glass-btn reveal">Reveal More</button>
+</section>
+
+<!-- 關於我 -->
+<section class="about-card hidden">
+  <h2 class="section-title">關於我</h2>
+
+  <div class="about-grid">
+    <div>
+      <h3 class="sub-title">個人資料</h3>
+      <p>姓名：李劼晉</p>
+      <p>身高：180.1 cm</p>
+      <p>國中：振聲高中國中部</p>
+      <p>高中：武陵高中</p>
+    </div>
+
+    <div>
+      <h3 class="sub-title">興趣、專長</h3>
+      <p>興趣：打籃球、唱歌</p>
+      <p>專長：剪輯、領導、養狗</p>
+      <p>短期目標：Python、C++</p>
+      <p>長期目標：NV / AMD</p>
+    </div>
+  </div>
+</section>
+
+<!-- 對話框 -->
+<section class="chatbox hidden">
+  <div id="messages"></div>
+
+  <div class="input-area glass">
+    <input id="userInput" placeholder="Say something..." />
+    <button id="sendBtn" class="glass-btn small">Send</button>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
